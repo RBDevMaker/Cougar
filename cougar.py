@@ -36,8 +36,17 @@ if 90 <= feline_age <= 99:
     
 if feline_age >= 100:
     print ("Your a Lion!")
-    
-    
+
+else:
+            print("Sorry, I can only categorize ages from 0 to 100.")
+        
+       # Ask again for age after displaying the category
+        continue_input = input("Would you like to enter another age? (yes/no): ").lower()
+        if continue_input != "yes":
+            break
+        
+    except ValueError:
+        print("Please enter a valid number for your age.")    
     
 
     
