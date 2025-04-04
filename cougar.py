@@ -38,6 +38,5 @@ if feline_age >= 100:
     print ("You are a Lion!")
     
     
-    
 
     
