@@ -1,42 +1,57 @@
-feline_age = input("Which feline are you? (Enter your age): ")
-feline_age = int(feline_age)
+while True:
+    try:
 
-if 0 <= feline_age <= 17:
-    print ("You are a Kitten!")
-    
-if 18 <= feline_age <= 21:
-    print ("You are a Wildcat!")
-    
-if 22 <= feline_age <= 29:
-    print ("You are a Lynx!")
-    
-if 30 <= feline_age <= 39:
-    print ("You are a Puma!")
-    
-if 40 <= feline_age <= 49:
-    print ("You are a Cougar!")
+        feline_age = int(input("Which feline are you? (Enter your age): "))
 
-if 50 <= feline_age <= 59:
-    print ("You are a Jaguar!") 
-
-if 60 <= feline_age <= 68:
-    print ("You are a Panther!")
-
-if feline_age == 69:
-    print ("You are a Pussycat!")
+        if 0 <= feline_age <= 17:
+            print ("You are a Kitten!")
     
-if 70 <= feline_age <= 79:
-    print ("You are a Cheetah!")
-
-if 80 <= feline_age <= 89:
-    print ("You are a Leopard!")
-
-if 90 <= feline_age <= 99:
-    print ("You are a Tiger!")   
+        elif 18 <= feline_age <= 21:
+            print ("You are a Wildcat!")
     
-if feline_age >= 100:
-    print ("You are a Lion!")
+        elif 22 <= feline_age <= 29:
+            print ("You are a Lynx!")
     
+        elif 30 <= feline_age <= 39:
+            print ("You are a Puma!")
+    
+        elif 40 <= feline_age <= 49:
+            print ("You are a Cougar!")
+
+        elif 50 <= feline_age <= 59:
+            print ("You are a Jaguar!") 
+
+        elif 60 <= feline_age <= 68:
+            print ("You are a Panther!")
+
+        elif feline_age == 69:
+            print ("You are a Pussycat!")
+    
+        elif 70 <= feline_age <= 79:
+            print ("You are a Cheetah!")
+
+        elif 80 <= feline_age <= 89:
+            print ("You are a Leopard!")
+
+        elif 90 <= feline_age <= 99:
+            print ("You are a Tiger!")   
+    
+        if feline_age >= 100:
+            print ("You are a Lion!")
+    
+        elif feline_age >= 100:
+            print ("Your a Lion!")
+
+        else:
+            print("Sorry, I can only categorize ages from 0 to 100.")
+        
+       # Ask again for age after displaying the category
+        continue_input = input("Would you like to enter another age? (yes/no): ").lower()
+        if continue_input != "yes":
+            break
+        
+    except ValueError:
+        print("Please enter a valid number for your age.")    
     
 
     
